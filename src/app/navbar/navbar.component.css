@@ -1,0 +1,62 @@
+
+.upper-nav{
+    width: 500px;
+  margin-right: 20%;
+  float: right;
+  display: block;
+  margin-bottom: 20px;
+  
+}
+ ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin: 20px;;
+    
+}
+a{
+    font-size: medium;
+    text-decoration:none ;
+    color: #673ab7;
+}
+.logo{
+    margin: 20px;
+    margin-left: 23%;
+    margin-top: 40px;
+    width: 90px;
+    height: 40px;
+    float: left;
+    color: #361c63;
+}
+.slogan{
+    float: right;
+    height: 35px;
+    width: 300px;
+    margin: 20px;
+    margin-right: -495px;
+   display: block;
+    margin-top: 50px;
+    color: #361c63;
+}
+
+.lower-nav{
+    width: 500px;
+  float: left;
+  display: block;
+  margin-top: 120px;
+  margin-left: -172px;
+}
+.lower-nav ul li a{
+    color:rgb(36, 36, 36);
+    font-weight: 500;
+}
+
+.wrapper{
+    margin:0;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:170px;
+    background-color: white;
+}
