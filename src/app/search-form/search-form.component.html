@@ -1,88 +1,87 @@
 <div class="container">
-    <p class="pageInfo">Startseite</p>
-    <h2>Willkommen im Jobportal</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elementum turpis</p>
- 
-    <p>Fusce convallis leo non purus congue, quis auctor ex lacinia. Nulla facilisi. Fusce placerat vel odio nec tempus. Curabitur rutrum feugiat eros, vel pulvinar sapien sagittis, consectetur adipiscing rerum momorium tanta facet.</p>
-    <div class="white">
-        <h4 style=" padding: 20px;">Stellensuche</h4>
-        <br>
-        <div class="form-wrapper">
-        <div class="form">
-        <span class="label">Stichwort</span>
-        <mat-form-field class="input">
-            <input type="text" placeholder="Stichwort, Tätigkeit, Stellennummer..."  matInput [formControl]="myControl" [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete">
-              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                {{option}}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-    </div>
-    <div class="form">
-        <span class="label">Berufsfeld</span>
-        <mat-form-field class="input" >
-            <mat-select placeholder="Berufsfeld wählen" [formControl]="mySelectControl">
-              <mat-option *ngFor="let option of options; let i = index" [value]="i">
-                {{option}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-          
-    </div>
-    <div class="form">
-        <span class="label">Einstiegsart</span>
-        <mat-form-field class="input">
-            <mat-select placeholder="Einstiegsart wählen" [formControl]="mySelectControl">
-              <mat-option *ngFor="let option of options; let i = index" [value]="i">
-                {{option}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>     
-    </div>
-    <div class="form">
-        <span class="label">Land</span>
-        <mat-form-field class="input">
-            <mat-select placeholder="Land wählen" [formControl]="mySelectControl">
-              <mat-option *ngFor="let option of options; let i = index" [value]="i">
-                {{option}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-    </div>
-    <div
-     class="form">
-        <span class="label">Region</span>
-        <mat-form-field class="input">
-            <mat-select placeholder="Region wählen" [formControl]="mySelectControl">
-              <mat-option *ngFor="let option of options; let i = index" [value]="i">
-                {{option}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-          
-        </div>
-    
-    <div class="form">
-        <span class="label">PLZ/Ort</span>
-        <mat-form-field class="input">
-            <input type="text" placeholder="Postleitzahl oder Ort eingeben"  matInput [formControl]="myControl" [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete">
-              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                {{option}}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-    </div>
-    <div class="form">
-        <span class="label">Umkreis</span>
-        <mat-form-field class="input">
-            <input type="number" placeholder="Umkreis in km"  matInput [formControl]="mySelectControl" >
-          </mat-form-field>
-    </div>
-    <button mat-flat-button color=primary class="input btn">264 Stellenangebote anzeigen</button>
-    <button mat-flat-button color=warn class="btn"(click)=reset()>Zurücksetzen</button>
-    </div>
-</div>
-    </div>
+  <p class="pageInfo">Startseite</p>
+  <h2>Willkommen im Jobportal</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elementum turpis</p>
 
+  <p>Fusce convallis leo non purus congue, quis auctor ex lacinia. Nulla facilisi. Fusce placerat vel odio nec tempus. Curabitur rutrum feugiat eros, vel pulvinar sapien sagittis, consectetur adipiscing rerum momorium tanta facet.</p>
+  <div class="white">
+      <h4 style=" padding: 20px;">Stellensuche</h4>
+      <br>
+      <div class="form-wrapper">
+      <div class="form">
+      <span class="label">Stichwort</span>
+      <mat-form-field class="input">
+          <input type="text" placeholder="Stichwort, Tätigkeit, Stellennummer..."  matInput [formControl]="myControl" [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+  </div>
+  <div class="form">
+      <span class="label">Berufsfeld</span>
+      <mat-form-field class="input" >
+          <mat-select placeholder="Berufsfeld wählen" [formControl]="mySelectControl">
+            <mat-option *ngFor="let option of berufsfelder; let i = index" [value]="i">
+              {{option}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+  </div>
+  <div class="form">
+      <span class="label">Einstiegsart</span>
+      <mat-form-field class="input">
+          <mat-select placeholder="Einstiegsart wählen" [formControl]="mySelectControl">
+            <mat-option *ngFor="let option of einstiegsarten; let i = index" [value]="i">
+              {{option}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>     
+  </div>
+  <div class="form">
+      <span class="label">Land</span>
+      <mat-form-field class="input">
+          <mat-select placeholder="Land wählen" [formControl]="mySelectControl">
+            <mat-option *ngFor="let option of laender; let i = index" [value]="i">
+              {{option}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  </div>
+  <div
+   class="form">
+      <span class="label">Region</span>
+      <mat-form-field class="input">
+          <mat-select placeholder="Region wählen" [formControl]="mySelectControl">
+            <mat-option *ngFor="let option of regionen; let i = index" [value]="i">
+              {{option}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+      </div>
+  
+  <div class="form">
+      <span class="label">PLZ/Ort</span>
+      <mat-form-field class="input">
+          <input type="text" placeholder="Postleitzahl oder Ort eingeben"  matInput [formControl]="myZipControl" [matAutocomplete]="auto2">
+          <mat-autocomplete #auto2="matAutocomplete">
+            <mat-option *ngFor="let m of filteredZips | async" [value]="m">
+              {{m}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+  </div>
+  <div class="form">
+      <span class="label">Umkreis</span>
+      <mat-form-field class="input">
+          <input type="number" placeholder="Umkreis in km"  matInput [formControl]="mySelectControl" >
+        </mat-form-field>
+  </div>
+  <button mat-flat-button color=primary class="input btn">264 Stellenangebote anzeigen</button>
+  <button mat-flat-button color=warn class="btn"(click)=reset()>Zurücksetzen</button>
+  </div>
+</div>
+  </div>

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchFormComponent } from './search-form/search-form.component';
 import {MatAutocompleteModule,MatInputModule, MatSelectModule, MatButtonModule} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatAutocompleteModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
