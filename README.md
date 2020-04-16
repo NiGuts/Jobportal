@@ -1,9 +1,18 @@
 # Jobportal
 
 
-Abbildung 1: Screenshot des Jobportals
-![Gameplay Screenshot](https://github.com/NiGuts/Jobportal/blob/master/jobportal_screenshot.png)
+Abbildung 1: Screenshot des Jobportals ![Gameplay Screenshot](https://github.com/NiGuts/Jobportal/blob/master/jobportal_screenshot.png)
 
+Die Startseite für das Jobportal eines fiktiven Unternehmens.
+
+Übersicht:
+- Angular Frontend mit Reactive Forms und Angular Material
+- Automatischer Eingabefilter (d.h. beim Tippen werden Vorschläge angezeigt, die ausgeählt werden können) für die Felder Stichwort und PLZ/Ort
+- Auswahl von Presets für die Felder Berufsfeld, Einstiegsart, Land, Region
+- Zurücksetzen des Formulars durch den entsprechenden Button
+- Springboot REST-Service im Backend liefert die Daten für das Formular
+
+Abbildung 2: Eingabefilter beim Feld PLZ/Ort ![Gameplay Screenshot](https://github.com/NiGuts/Jobportal/blob/master/jobportal_screenshot2.png)
 
  Vor dem Ausführen der App mit einer Angular 8 oder neuer sollte <b>npm install</b> im Projektverzeichnis ausgeführt werden und das Java Backend gestartet werden. 
  ### Von Angular generierter Text zum Frontend.
