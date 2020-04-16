@@ -1,6 +1,12 @@
 # Jobportal
-## Von Angular generierter Text zum Frontend.
-## Vor dem Ausführen der App sollte <b>npm install</b> im Projektverzeichnis ausgeführt werden und das Backend gestartet werden. 
+
+
+Abbildung 1: Screenshot des Jobportals
+![Gameplay Screenshot](https://github.com/NiGuts/Jobportal/blob/master/jobportal_screenshot.png)
+
+
+ Vor dem Ausführen der App mit einer Angular 8 oder neuer sollte <b>npm install</b> im Projektverzeichnis ausgeführt werden und das Java Backend gestartet werden. 
+ ### Von Angular generierter Text zum Frontend.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
