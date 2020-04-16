@@ -1,4 +1,6 @@
 # Jobportal
+## Von Angular generierter Text zum Frontend.
+## Vor dem Ausführen der App sollte <b>npm install</b> im Projektverzeichnis ausgeführt werden und das Backend gestartet werden. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
