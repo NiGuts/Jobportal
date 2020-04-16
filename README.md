@@ -7,7 +7,7 @@ Die Startseite für das Jobportal eines fiktiven Unternehmens.
 
 Übersicht:
 - Angular Frontend mit Reactive Forms und Angular Material
-- Automatischer Eingabefilter (d.h. beim Tippen werden Vorschläge angezeigt, die ausgeählt werden können) für die Felder Stichwort und PLZ/Ort
+- Automatischer Eingabefilter (d.h. beim Tippen werden Vorschläge angezeigt, die ausgewählt werden können) für die Felder Stichwort und PLZ/Ort
 - Auswahl von Presets für die Felder Berufsfeld, Einstiegsart, Land, Region
 - Zurücksetzen des Formulars durch den entsprechenden Button
 - Springboot REST-Service im Backend liefert die Daten für das Formular
